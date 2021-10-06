@@ -41,6 +41,7 @@ const Wrapper = styled.div`
   background-color: ${COLORS.transparentGray15};
   padding: var(--padding);
   border-radius: var(--border-radius);
+  box-shadow: inset 0px 2px 4px ${COLORS.transparentGray35};
 `
 
 const InnerBar = styled.div`
