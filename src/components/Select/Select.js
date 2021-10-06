@@ -27,6 +27,7 @@ const Wrapper = styled.div`
 `
 
 const NativeSelect = styled.select`
+  appearance: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -44,8 +45,10 @@ const PresentationalBit = styled.div`
   border-radius: 8px;
 
   ${NativeSelect}:focus + & {
-    outline: 1px dotter #212121;
-    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: 4px;
+    outline-color: ${COLORS.primary};
+    outline-style: solid;
+    outline-width: 2px;
   }
 
   ${NativeSelect}:hover + & {
